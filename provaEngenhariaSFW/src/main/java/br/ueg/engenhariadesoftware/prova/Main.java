@@ -24,6 +24,7 @@ public class Main {
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--remote-allow-origins=*");
+        chromeOptions.addArguments("headless");
 
         WebDriver driver = new ChromeDriver(chromeOptions);
         return driver;
